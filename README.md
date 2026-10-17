@@ -96,7 +96,7 @@ CREATE TABLE IF NOT EXISTS stock.etf_list (
 | `WORKER_ACCOUNT`、`WORKER_PASSWORD` | RabbitMQ 帳號與密碼 |
 | `SCHEDULE_SECONDS` | 預設 `43200`（12 小時），最小值 `60` |
 
-課程環境的 broker 範例預設值為 `worker`／`worker`，僅供練習。若使用自己的服務，請改成實際設定，不要提交真實密碼或含密碼的檔案。
+RabbitMQ 帳號與密碼分別由 `WORKER_ACCOUNT`、`WORKER_PASSWORD` 設定；MySQL 密碼由 `MYSQL_PASSWORD` 提供。執行前需依部署環境設定連線資訊，真實憑證不納入版本控制。
 
 ## 本機執行
 
